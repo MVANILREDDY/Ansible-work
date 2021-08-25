@@ -1,0 +1,8 @@
+---
+ - name: to display os name and version
+   hosts: all
+   tasks:
+   - name: printing os version and name
+     debug:
+      msg: os distribution is {{ ansible_distribution }} and version is {{ ansible_distribution_version }}
+...
